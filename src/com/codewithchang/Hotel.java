@@ -1,9 +1,11 @@
 package com.codewithchang;
 
 public class Hotel {
-    private boolean checkIn;
+    private boolean isCheckedIn;
+    private boolean isCheckedOut;
 
-    public Hotel(boolean checkIn) {
-        this.checkIn = checkIn;
+    public Hotel(boolean isCheckedIn, boolean isCheckedOut) {
+        this.isCheckedIn = isCheckedIn;
+        this.isCheckedOut = isCheckedOut;
     }
 }
