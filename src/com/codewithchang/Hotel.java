@@ -8,4 +8,13 @@ public class Hotel {
         this.isCheckedIn = isCheckedIn;
         this.isCheckedOut = isCheckedOut;
     }
+
+    public boolean reserve() {
+        if(this.isCheckedIn) {
+            System.out.println("This room is Occupied.");
+        } else {
+            System.out.println("This room is available.");
+        }
+        return true;
+    }
 }
