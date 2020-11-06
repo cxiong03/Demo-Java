@@ -1,19 +1,19 @@
 package com.codewithchang;
 
 public class Hotel {
-    private boolean isCheckedIn;
-    private boolean isCheckedOut;
+    private String hotelName;
+    private boolean isOpen;
 
-    public Hotel(boolean isCheckedIn, boolean isCheckedOut) {
-        this.isCheckedIn = isCheckedIn;
-        this.isCheckedOut = isCheckedOut;
+    public Hotel(String hotelName, boolean isOpen) {
+        this.hotelName = hotelName;
+        this.isOpen = isOpen;
     }
 
-    public boolean reserve() {
-        if(this.isCheckedIn) {
-            System.out.println("This room is Occupied.");
+    public boolean roomsAvailable() {
+        if(isOpen) {
+            System.out.println("We're Open!");
         } else {
-            System.out.println("This room is available.");
+            System.out.println("Sorry, ");
         }
         return true;
     }
